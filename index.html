@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Primary Meta Tags -->
+  <title>Soumya Mehar | Computer Science Student & Developer</title>
+  <meta name="title" content="Soumya Mehar | Computer Science Student & Developer">
+  <meta name="description" content="Personal portfolio of Soumya Mehar, B.Tech Computer Science student at Symbiosis Institute of Technology, Nagpur. Interested in AI/ML, Full-Stack Development, and Academic Research.">
+  <meta name="author" content="Soumya Mehar">
+  <meta name="keywords" content="Soumya Mehar, Portfolio, Computer Science, AI, ML, Machine Learning, Deep Learning, SIT Nagpur, Full-Stack Development, IoT">
+  <meta name="theme-color" content="#0b0f17">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Soumya Mehar | Computer Science Student & Developer">
+  <meta property="og:description" content="Personal portfolio of Soumya Mehar — Computer Science student passionate about practical software solutions, AI/ML systems, and research.">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#top" class="brand-logo" aria-label="Soumya Mehar - Home">
+        <span class="brand-badge">SM</span>
+        <span class="brand-text">Soumya Mehar</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+          <li class="nav-item"><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li class="nav-item"><a href="#hackathons" class="nav-link">Hackathons</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>B.Tech CSE &bull; Class of 2028 &bull; Nagpur, India</span>
+          </div>
+
+          <h1 class="hero-name">Soumya Mehar</h1>
+          
+          <p class="hero-headline">
+            Computer Science Student <span class="divider">|</span> AI/ML <span class="divider">|</span> Full-Stack Development
+          </p>
+
+          <p class="hero-tagline">
+            "Building practical software, exploring intelligent systems, and learning through research."
+          </p>
+
+          <!-- Primary Hero Actions -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+            
+            <!-- RESUME BUTTON NOTE:
+                 To activate direct download once your resume is ready:
+                 1. Place your PDF inside 'assets/resume.pdf'
+                 2. Change class from 'btn-disabled' to 'btn-secondary' and uncomment the download attribute below.
+            -->
+            <!-- 
+            <a href="assets/resume.pdf" class="btn btn-secondary" download="Soumya_Mehar_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <span>Resume PDF</span>
+            </a>
+            -->
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/soumyamehar29" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/soumya-mehar-458115320/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:soumyamehar154@gmail.com" class="social-link" aria-label="Send Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo / Fallback Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-frame">
+              <!-- If assets/profile.jpg is added, this image displays. Otherwise, fallback triggers gracefully. -->
+              <img 
+                src="assets/profile.jpg" 
+                alt="Soumya Mehar - Profile Photo" 
+                class="avatar-image" 
+                id="hero-profile-img"
+                onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';"
+              >
+              <!-- Tasteful Initials Placeholder (Active by default until image exists) -->
+              <div class="avatar-fallback" id="avatar-fallback">
+                <span class="avatar-initials">SM</span>
+                <span class="avatar-caption">Soumya Mehar</span>
+              </div>
+            </div>
+            <div class="avatar-meta">
+              <div class="avatar-stat-row">
+                <div class="avatar-stat-col">
+                  <span class="meta-label">Academics</span>
+                  <div class="meta-cgpa">
+                    <span class="cgpa-number">7.26</span>
+                    <span class="cgpa-scale">/ 10.0 CGPA</span>
+                  </div>
+                </div>
+                <div class="cgpa-badge">B.Tech CSE</div>
+              </div>
+              <div class="avatar-divider"></div>
+              <div class="avatar-stat-item">
+                <span class="meta-label">Current Focus</span>
+                <span class="meta-value">AI/ML &bull; IoT &bull; Web Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ABOUT SECTION
+         ========================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 &bull; Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging theoretical computer science with hands-on, practical engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main-card">
+            <p class="about-intro-lead">
+              "I'm a Computer Science student passionate about building practical software solutions and exploring AI-driven technologies. My interests span software development, artificial intelligence, machine learning, and research. I enjoy learning new technologies, collaborating with teams, and turning ideas into meaningful projects."
+            </p>
+
+            <div class="about-details">
+              <p>
+                Currently pursuing a <strong>B.Tech in Computer Science and Engineering</strong> at <strong>Symbiosis Institute of Technology, Nagpur</strong> (expected graduation in <strong>2028</strong>). I approach technology as a continuous learner—experimenting with machine learning algorithms, building end-to-end applications, and contributing to academic research.
+              </p>
+              <p>
+                Beyond writing code, I actively engage in student governance, technical hackathons, and team leadership, helping transform technical concepts into well-structured, functional outcomes.
+              </p>
+            </div>
+
+            <!-- Profile Summary Points -->
+            <div class="about-meta-list">
+              <div class="meta-item">
+                <span class="meta-title">Location</span>
+                <span class="meta-detail">Nagpur, Maharashtra, India</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-title">Institution</span>
+                <span class="meta-detail">Symbiosis Institute of Technology</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-title">Degree</span>
+                <span class="meta-detail">B.Tech Computer Science & Engg.</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-title">Class of</span>
+                <span class="meta-detail">2028</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Software Development</h3>
+                <p class="pillar-desc">Building clean, practical web applications and system solutions with structured, maintainable code.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">AI & Machine Learning</h3>
+                <p class="pillar-desc">Hands-on experimentation with NLP, computer vision, data pipelines, predictive models, and GenAI APIs.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Research & Experimentation</h3>
+                <p class="pillar-desc">Investigating renewable energy, deep learning medical imaging architectures, and vernacular language systems.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Leadership & Teamwork</h3>
+                <p class="pillar-desc">Organising Secretary for Student Council, collaborating on hackathon squads, and coordinating campus events.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SKILLS SECTION
+         ========================================================================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 &bull; Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core programming, development toolchains, and machine learning libraries.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h3 class="category-title">AI & Machine Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">scikit-learn</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">Natural Language Processing (NLP)</span>
+              <span class="skill-tag">Generative AI</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3 class="category-title">Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Google Colab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 &bull; Engineering Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Selected technical implementations across IoT, NLP, Machine Learning, and Computer Vision.</p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- PROJECT 1: Noise Pollution Monitoring System -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-meta-row">
+                  <span class="project-type">IoT / Hardware / Environmental Monitoring</span>
+                  <span class="badge badge-subtle">Hardware & Dashboard</span>
+                </div>
+                <h3 class="project-title">Noise Pollution Monitoring System</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-description">
+                A noise pollution monitoring system designed to measure surrounding sound levels and communicate noise conditions through an accessible monitoring interface.
+              </p>
+
+              <!-- Feature Highlights -->
+              <div class="project-features">
+                <h4 class="features-heading">Implementation Highlights</h4>
+                <ul class="features-list">
+                  <li>Integrated ESP32 microcontroller with sound sensor for real-time ambient noise capture</li>
+                  <li>Noise level measurement calibrated in decibels (dB)</li>
+                  <li>Continuous acoustic classification into <strong>Safe</strong>, <strong>Moderate</strong>, <strong>High</strong>, and <strong>Dangerous</strong> categories</li>
+                  <li>Local LCD/display component showing current sound intensity</li>
+                  <li>Web / mobile monitoring dashboard to view environmental audio conditions</li>
+                  <li>Associated research paper selected for presentation at <strong>ICACEBD-25</strong> conference (detailed in Research section)</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Sound Sensor</span>
+                <span class="tech-tag">Noise Monitoring</span>
+              </div>
+
+              <!-- Configurable Project Links:
+                   To link an active repo or demo, update the href and remove the 'is-disabled' class.
+              -->
+              <div class="project-links">
+                <a href="noise-pollution-gallery.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>View Project Screenshots (New Tab)</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <span class="project-status-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  Selected for ICACEBD-25 Conference
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Vernacular AI — Marathi Grammar Assistant -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-meta-row">
+                  <span class="project-type">NLP / Generative AI / Language Technology</span>
+                  <span class="badge badge-subtle">Academic & Research</span>
+                </div>
+                <h3 class="project-title">Vernacular AI — Marathi Grammar Assistant</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-description">
+                An AI-assisted language learning application focused on Marathi grammar correction, translation, pronunciation, and interactive language practice.
+              </p>
+
+              <!-- Feature Highlights -->
+              <div class="project-features">
+                <h4 class="features-heading">Implementation Highlights</h4>
+                <ul class="features-list">
+                  <li>Marathi grammar correction and contextual suggestion engine</li>
+                  <li>Bidirectional translation support into both English and Hindi</li>
+                  <li>Voice input with automated speech-to-text (STT) for natural input</li>
+                  <li>Text-to-speech (TTS) and pronunciation guidance for language learners</li>
+                  <li>Sandhi-vigraha compound decomposition and linguistic breakdown</li>
+                  <li>Practice mode with interactive scoring, complexity scores, and evaluation dashboard</li>
+                  <li>Integration with the <strong>Sarvam AI API</strong> alongside a robust <strong>Node.js and Express</strong> backend</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Sarvam AI</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="marathi-ai-gallery.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>View Application Screenshots (New Tab)</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <span class="project-status-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  Active Academic & Research Project
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: AI Crop Prediction & Planning Agent -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-meta-row">
+                  <span class="project-type">Machine Learning / Smart Agriculture</span>
+                  <span class="badge badge-success">Deployed Online</span>
+                </div>
+                <h3 class="project-title">AI Crop Prediction & Planning Agent</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-description">
+                An intelligent crop recommendation application that combines soil information with location-specific current weather data to help users explore suitable crop options.
+              </p>
+
+              <!-- Feature Highlights -->
+              <div class="project-features">
+                <h4 class="features-heading">Implementation Highlights</h4>
+                <ul class="features-list">
+                  <li>Collects soil-related chemical and physical parameters</li>
+                  <li>Detects user location to retrieve current hyper-local weather parameters</li>
+                  <li>Trained machine learning model serialized as <code>crop_model.pkl</code></li>
+                  <li>Ranks and delivers a top-five crop recommendation output based on predictive probability</li>
+                  <li>Interactive web user interface for intuitive input entry and recommendation viewing</li>
+                  <li>Engineered using Python, Pandas, and scikit-learn</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Weather Data</span>
+                <span class="tech-tag">Smart Agriculture</span>
+              </div>
+
+              <!-- Configurable links for Crop Prediction -->
+              <div class="project-links">
+                <a href="https://ai-agent-for-seasonal-crop-planner.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Live App / Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <span class="project-status-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Deployed on Render &bull; Trained Model Pipeline
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Brain Tumor Segmentation -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-meta-row">
+                  <span class="project-type">Deep Learning / Computer Vision / Medical Image Analysis</span>
+                  <span class="badge badge-warning">In Progress &bull; Non-Clinical Research</span>
+                </div>
+                <h3 class="project-title">Hybrid U-Net and Vision Transformer Architecture for Brain Tumor Segmentation from MRI Scans with Explainability</h3>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-description">
+                A research-oriented deep learning project exploring the combination of U-Net and Vision Transformer architectures for brain tumor segmentation from MRI scans, with explainability as an additional objective.
+              </p>
+
+              <!-- Feature Highlights -->
+              <div class="project-features">
+                <h4 class="features-heading">Implementation Highlights</h4>
+                <ul class="features-list">
+                  <li>Trained and evaluated on the benchmark <strong>BraTS2020</strong> MRI dataset</li>
+                  <li>Implemented using <strong>PyTorch</strong> for modular deep learning experimentation</li>
+                  <li>Hybrid architecture coupling U-Net's spatial feature localization with Vision Transformer's long-range self-attention</li>
+                  <li>Targeting multi-class tumor sub-region segmentation</li>
+                  <li>Incorporating <strong>Grad-CAM++</strong> visual explainability to generate interpretable attention heatmaps</li>
+                  <li>Planned web interface for MRI slice upload and segmentation visual inspection</li>
+                </ul>
+              </div>
+
+              <!-- Clear, Accurate Disclaimers as requested -->
+              <div class="callout-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>
+                  <strong>Academic Research Disclaimer:</strong> This project is exploratory and actively in progress. It is not clinically validated and does not constitute a diagnostic medical tool. Model evaluation and iterative performance refinements are ongoing.
+                </span>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">U-Net</span>
+                <span class="tech-tag">Vision Transformer</span>
+                <span class="tech-tag">MRI</span>
+                <span class="tech-tag">Grad-CAM++</span>
+              </div>
+
+              <div class="project-links">
+                <!-- 
+                <a href="YOUR_BRAIN_TUMOR_REPO_URL" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>Repository</span>
+                </a>
+                -->
+                <span class="project-status-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Research & Architecture Tuning in Progress
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         EXPERIENCE SECTION
+         ========================================================================= -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 &bull; Professional Growth</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Practical industry exposure and applied machine learning internships.</p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <h3 class="role-title">AI/ML Intern</h3>
+                  <span class="org-name">InternPE</span>
+                </div>
+                <div class="exp-badge-group">
+                  <span class="badge badge-subtle">Online Internship</span>
+                  <span class="exp-duration">24-May-2026 – 05-July-2026</span>
+                </div>
+              </div>
+
+              <p class="exp-summary">
+                Completed an online AI/ML internship focused on applied machine learning, gaining hands-on exposure to data preprocessing, supervised model training, and prediction-oriented pipelines.
+              </p>
+
+              <div class="exp-projects">
+                <h4 class="sub-heading">Key Prediction Projects Handled:</h4>
+                <ul class="exp-list">
+                  <li><strong>IPL Prediction:</strong> Exploratory data analysis and outcome prediction modeling on sports dataset.</li>
+                  <li><strong>Diabetes Prediction:</strong> Classification pipeline utilizing clinical indicators to assess diabetic risk.</li>
+                  <li><strong>Breast Cancer Prediction:</strong> Diagnostic feature evaluation and supervised binary classification model.</li>
+                </ul>
+              </div>
+
+              <!-- Certificate Preview & Verification directly inside Experience -->
+              <div class="cert-preview-container" style="margin-top: 1.25rem;">
+                <a href="assets/certificates/internpe-internship.jpg" target="_blank" rel="noopener noreferrer" title="Click to inspect full certificate">
+                  <img src="assets/certificates/internpe-internship.jpg" alt="InternPe AI/ML Internship Completion Certificate - Soumya Mehar" class="cert-preview-img">
+                  <div class="cert-preview-overlay">
+                    <span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                      Expand Internship Certificate
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="cert-meta-tags">
+                <span class="cert-meta-tag">CID: IPI#74780</span>
+                <span class="cert-meta-tag">ISO 9001:2015</span>
+                <span class="cert-meta-tag">MSME Registered</span>
+                <span class="cert-meta-tag">AICTE Recognized</span>
+              </div>
+
+              <div class="exp-footer" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:0.75rem; margin-top:1rem;">
+                <a href="assets/certificates/internpe-internship.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>View Internship Certificate</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <span class="cert-note">
+                  Verify Online: <a href="https://internpe.in/verify.html" target="_blank" rel="noopener noreferrer" class="inline-link">internpe.in/verify.html</a> (CID: IPI#74780)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         RESEARCH & PUBLICATIONS SECTION
+         ========================================================================= -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 &bull; Academic Inquiries</span>
+          <h2 class="section-title">Research & Publications</h2>
+          <p class="section-subtitle">Conference contributions, peer-reviewed proceedings, and ongoing research initiatives.</p>
+        </div>
+
+        <div class="research-grid">
+          
+          <!-- Publication 1: IC-NGI-GSS-2025 -->
+          <div class="research-card">
+            <div class="research-status-row">
+              <span class="status-badge status-published">
+                <span class="indicator-dot"></span> Published
+              </span>
+              <span class="research-year">2025</span>
+            </div>
+            <h3 class="research-title">Renewable and Sustainable Energy: On Solar, Wind and Hybrid Energy Innovations</h3>
+            <p class="research-venue">
+              <strong>Venue:</strong> Proceedings of IC-NGI-GSS-2025 — Two-Day International Conference on Next-Generation Infrastructure: Green Technology, Smart Cities, and Sustainable Energy Solution (ISBN: 978-93-342-7119-5, KDKCE).
+            </p>
+
+            <p class="research-description">
+              Investigates structural and technological advancements in renewable infrastructure, evaluating modern innovations across standalone solar, wind harnessing systems, and integrated hybrid energy configurations for sustainable smart communities.
+            </p>
+            <div class="research-meta-tags">
+              <span class="pill-tag">Renewable Energy</span>
+              <span class="pill-tag">Solar & Wind</span>
+              <span class="pill-tag">Hybrid Systems</span>
+              <span class="pill-tag">ISBN: 978-93-342-7119-5</span>
+            </div>
+            <div class="research-actions">
+              <a href="assets/research/renewable-energy-paper.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View Full Paper Excerpt (New Tab)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Publication 2: ICACEBD-25 -->
+          <div class="research-card">
+            <div class="research-status-row">
+              <span class="status-badge status-selected">
+                <span class="indicator-dot"></span> Presented / Certificate
+              </span>
+              <span class="research-year">2025</span>
+            </div>
+            <h3 class="research-title">Noise Pollution Monitoring System</h3>
+            <p class="research-venue">
+              <strong>Conference:</strong> ICACEBD-25 — 3rd International Conference on Advanced Communication, Energy and Big Data, GH Raisoni College (CRC Press / Taylor &amp; Francis, Scopus-Indexed).
+            </p>
+
+            <p class="research-description">
+              Presents an embedded sensing framework leveraging edge microcontrollers for real-time acoustic measurement, multi-tier decibel threshold categorization, and synchronized dashboard telemetry.
+            </p>
+            <div class="research-meta-tags">
+              <span class="pill-tag">IoT Sensing</span>
+              <span class="pill-tag">Acoustic Monitoring</span>
+              <span class="pill-tag">Edge Computing</span>
+              <span class="pill-tag">Scopus Indexed</span>
+            </div>
+            <div class="research-actions">
+              <a href="assets/research/noise-pollution-certificate.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View Certificate (New Tab)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         LEADERSHIP SECTION
+         ========================================================================= -->
+    <section class="section leadership-section" id="leadership">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06 &bull; Responsibility</span>
+          <h2 class="section-title">Leadership & Campus Involvement</h2>
+          <p class="section-subtitle">Governance, large-scale event operations, and student council administration.</p>
+        </div>
+
+        <div class="leadership-card">
+          <div class="leadership-header">
+            <div>
+              <span class="role-badge">Student Governance</span>
+              <h3 class="leadership-position">Organising Secretary — Student Council</h3>
+              <p class="leadership-institution">Symbiosis Institute of Technology, Nagpur</p>
+            </div>
+            <div class="leadership-tenure">
+              <span class="tenure-pill">Academic Year 2025–26</span>
+            </div>
+          </div>
+
+          <p class="leadership-summary">
+            "Served as Organising Secretary and a core member of the college Student Council, contributing to the planning, coordination, documentation, and execution of academic, technical, and cultural events."
+          </p>
+
+          <div class="responsibilities-grid">
+            <div class="resp-block">
+              <h4 class="resp-block-title">Key Responsibilities Executed</h4>
+              <ul class="resp-list">
+                <li>Coordinated approximately 9–10 student volunteers across roughly 15 institutional events.</li>
+                <li>Supported logistical execution for college fests, technical symposia, cultural festivals, and an international conference.</li>
+                <li>Arranged venue setups, technical audio systems (microphones, PA speakers), seating arrangements, and dais setups.</li>
+                <li>Drafted comprehensive post-event documentation and institutional event reports.</li>
+                <li>Prepared Memorandums of Understanding (MoUs) for the annual flagship college fest, <em>Enthusia</em>.</li>
+                <li>Administered student election paperwork, club registration dossiers, and maintained official campus records.</li>
+                <li>Assisted in corporate sponsorship outreach, including establishing contact with real estate builders for fest partnerships.</li>
+                <li>Assisted in budget formulation, treasury accounting, and task accountability tracking across volunteer sub-teams.</li>
+              </ul>
+            </div>
+
+            <div class="skills-demonstrated-block">
+              <h4 class="resp-block-title">Competencies Demonstrated</h4>
+              <div class="comp-tags">
+                <span class="comp-tag">Leadership</span>
+                <span class="comp-tag">Team Coordination</span>
+                <span class="comp-tag">Event Management</span>
+                <span class="comp-tag">Documentation</span>
+                <span class="comp-tag">Communication</span>
+                <span class="comp-tag">Time Management</span>
+                <span class="comp-tag">Deadline Management</span>
+                <span class="comp-tag">Sponsorship Coordination</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leadership Gallery Action Button -->
+          <div class="leadership-action-row" style="margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+            <div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">
+                Official Leadership Records &amp; Verifications
+              </h4>
+              <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0;">
+                Investiture ceremony photos, student council credentials, and IEEE volunteer certificates.
+              </p>
+            </div>
+            <a href="leadership-gallery.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>View Leadership Gallery (New Tab)</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         HACKATHONS SECTION
+         ========================================================================= -->
+    <section class="section hackathons-section" id="hackathons">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">07 &bull; Team Innovation</span>
+          <h2 class="section-title">Hackathons</h2>
+          <p class="section-subtitle">Collaborative problem-solving, rapid prototyping, and team ideation sprints.</p>
+        </div>
+
+        <div class="hackathons-grid">
+          
+          <!-- Code Your Cult -->
+          <div class="hackathon-card">
+            <div class="hackathon-badge">Hackathon</div>
+            <h3 class="hackathon-name">Code Your Cult Hackathon</h3>
+            <div class="hackathon-project">
+              <span class="project-label">Project:</span>
+              <span class="project-val">Vernacular for Indian Languages</span>
+            </div>
+            <p class="hackathon-desc">
+              Collaborated as an active team member developing technology to support regional Indian language users through multilingual translation and accessibility solutions.
+            </p>
+            <div class="hackathon-role">
+              <span>Role: Team Member &bull; Ideation & Implementation</span>
+            </div>
+          </div>
+
+          <!-- YCCE Hackathon -->
+          <div class="hackathon-card">
+            <div class="hackathon-badge">Hackathon</div>
+            <h3 class="hackathon-name">YCCE College Hackathon</h3>
+            <div class="hackathon-project">
+              <span class="project-label">Organized By:</span>
+              <span class="project-val">Dept of IT, YCCE Nagpur &bull; August 6–8, 2026</span>
+            </div>
+            <p class="hackathon-desc">
+              Actively participated in the collegiate hackathon at ITECHROOTS 16.0 organized by the Department of Information Technology at Yeshwantrao Chavan College of Engineering, contributing to rapid problem-solving, ideation, and collaborative engineering.
+            </p>
+            <div class="hackathon-role">
+              <span>Role: Participant &bull; SIT Nagpur</span>
+            </div>
+            <div class="hackathon-action">
+              <a href="assets/certificates/ycce-itechroots-hackathon.png" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Adobe University Hackathon -->
+          <div class="hackathon-card">
+            <div class="hackathon-badge">Hackathon</div>
+            <h3 class="hackathon-name">Adobe University Hackathon</h3>
+            <div class="hackathon-project">
+              <span class="project-label">Organized By:</span>
+              <span class="project-val">Adobe &bull; August 9, 2026</span>
+            </div>
+            <p class="hackathon-desc">
+              Participated representing Symbiosis Institute of Technology, Nagpur in collegiate hackathon challenges organized by Adobe, conceptualizing software approaches under competitive sprints and agile collaboration.
+            </p>
+            <div class="hackathon-role">
+              <span>Role: Participant &bull; SIT Nagpur</span>
+            </div>
+            <div class="hackathon-action">
+              <a href="assets/certificates/adobe-university-hackathon.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate (PDF)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Unstop Week-of-Wins -->
+          <div class="hackathon-card">
+            <div class="hackathon-badge">Hackathon</div>
+            <h3 class="hackathon-name">Unstop Week-of-Wins</h3>
+            <div class="hackathon-project">
+              <span class="project-label">Organizer:</span>
+              <span class="project-val">Unstop</span>
+            </div>
+            <p class="hackathon-desc">
+              Participated representing Symbiosis Institute of Technology, Nagpur in competitive engineering challenges, rapid technical problem-solving, and innovation ideation sprints.
+            </p>
+            <div class="hackathon-role">
+              <span>Role: Participant &bull; SIT Nagpur</span>
+            </div>
+            <div class="hackathon-action">
+              <a href="assets/certificates/unstop-week-of-wins.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate (PDF)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CERTIFICATIONS SECTION
+         ========================================================================= -->
+    <section class="section certificates-section" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">08 &bull; Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Technical certifications, specialized coursework, and verified skill achievements.</p>
+        </div>
+
+        <div class="certificates-grid">
+          
+          <!-- Certificate 1: Python Programming with Red Hat -->
+          <div class="certificate-card">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="cert-info">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                <span class="badge badge-subtle">Red Hat</span>
+                <span class="research-year">2025</span>
+              </div>
+              <h3 class="cert-title">Python Programming with Red Hat (AD141 - RHA)</h3>
+              <p class="cert-issuer">Red Hat &bull; March 29, 2025 &bull; 32 Credit Hours</p>
+              <p class="cert-description">
+                Comprehensive training on core Python programming, data structures, modular software development, and automation workflows on enterprise Linux environments.
+              </p>
+              <div class="cert-meta-tags">
+                <span class="cert-meta-tag">Python 3</span>
+                <span class="cert-meta-tag">Red Hat Enterprise</span>
+                <span class="cert-meta-tag">32 Hours</span>
+                <span class="cert-meta-tag">Karl Reynolds Signatory</span>
+              </div>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/redhat-python-programming-2025.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate (PDF)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <span class="cert-note">
+                Verify Credly Badge: <a href="https://www.credly.com/badges/c2181753-e78f-48dc-8aea-24bb9495a7e9" target="_blank" rel="noopener noreferrer" class="inline-link">credly.com/badges</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Certificate 2: Network Automation with Red Hat Ansible -->
+          <div class="certificate-card">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="cert-info">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                <span class="badge badge-subtle">Red Hat</span>
+                <span class="research-year">2026</span>
+              </div>
+              <h3 class="cert-title">Network Automation with Red Hat Ansible (DO457 - RHA)</h3>
+              <p class="cert-issuer">Red Hat &bull; September 30, 2026 &bull; 32 Credit Hours</p>
+              <p class="cert-description">
+                Specialized program focused on automating network infrastructure, playbooks, configuration management, and declarative network state orchestration using Ansible Automation Platform.
+              </p>
+              <div class="cert-meta-tags">
+                <span class="cert-meta-tag">Ansible</span>
+                <span class="cert-meta-tag">Network Automation</span>
+                <span class="cert-meta-tag">Infrastructure as Code</span>
+                <span class="cert-meta-tag">32 Hours</span>
+              </div>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/redhat-network-automation-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate (PDF)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <span class="cert-note">
+                Verify Credly Badge: <a href="https://www.credly.com/badges/e28ee1bf-0ea4-4a2a-a4f3-8f66973e0022" target="_blank" rel="noopener noreferrer" class="inline-link">credly.com/badges</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Certificate 3: LLM Engineering, RAG, & AI Agents Masterclass -->
+          <div class="certificate-card">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="cert-info">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                <span class="badge badge-subtle">Udemy</span>
+                <span class="research-year">2026</span>
+              </div>
+              <h3 class="cert-title">LLM Engineering, RAG, &amp; AI Agents Masterclass [2026]</h3>
+              <p class="cert-issuer">Prof. Ryan Ahmed, Ph.D., MBA &bull; July 9, 2026 &bull; 24 Hours</p>
+              <p class="cert-description">
+                Advanced masterclass covering Large Language Model (LLM) architectures, Retrieval-Augmented Generation (RAG) vector pipelines, autonomous multi-agent systems, and generative AI deployment.
+              </p>
+              <div class="cert-meta-tags">
+                <span class="cert-meta-tag">LLM Engineering</span>
+                <span class="cert-meta-tag">RAG Pipelines</span>
+                <span class="cert-meta-tag">Autonomous Agents</span>
+                <span class="cert-meta-tag">UC-a04f661b</span>
+              </div>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/udemy-llm-engineering-rag-agents-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate (PDF)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <span class="cert-note">
+                Verify Online: <a href="https://ude.my/UC-a04f661b-ab2b-4329-9bdf-b5c027b46ae4" target="_blank" rel="noopener noreferrer" class="inline-link">ude.my/UC-a04f661b</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Certificate 4: Infosys Springboard - DSA using Python -->
+          <div class="certificate-card">
+            <div class="cert-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="cert-info">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                <span class="badge badge-subtle">Infosys Springboard</span>
+                <span class="research-year">2025</span>
+              </div>
+              <h3 class="cert-title">Data Structures and Algorithms using Python - Part 1</h3>
+              <p class="cert-issuer">Infosys Limited &bull; November 5, 2025</p>
+              <p class="cert-description">
+                Comprehensive training on core data structures, algorithmic efficiency, complexity analysis, and problem-solving techniques implemented in Python, certified by Infosys Springboard.
+              </p>
+              <div class="cert-meta-tags">
+                <span class="cert-meta-tag">Data Structures</span>
+                <span class="cert-meta-tag">Algorithms</span>
+                <span class="cert-meta-tag">Python</span>
+                <span class="cert-meta-tag">Infosys Springboard</span>
+              </div>
+            </div>
+            <div class="cert-action">
+              <a href="assets/certificates/infosys-springboard-dsa-python.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm cert-btn">
+                <span>View Certificate (PDF)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <span class="cert-note">
+                Verify Online: <a href="https://verify.onwingspan.com" target="_blank" rel="noopener noreferrer" class="inline-link">verify.onwingspan.com</a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         EDUCATION SECTION
+         ========================================================================= -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">09 &bull; Academic Foundation</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Undergraduate studies in Computer Science and Engineering.</p>
+        </div>
+
+        <div class="education-list">
+          <!-- 1. B.Tech -->
+          <div class="education-card">
+            <div class="edu-top">
+              <div class="edu-institution-info">
+                <div class="edu-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div>
+                  <h3 class="edu-degree">B.Tech in Computer Science and Engineering</h3>
+                  <p class="edu-institution">Symbiosis Institute of Technology, Nagpur</p>
+                </div>
+              </div>
+              <div class="edu-timeline-badge">
+                <span>Graduation: 2028 &bull; CGPA: 7.26 / 10.0</span>
+              </div>
+            </div>
+
+            <div class="edu-details">
+              <p>
+                Undergraduate degree focused on computer science fundamentals, data structures, algorithms, machine learning systems, and full-stack software development.
+              </p>
+              <div class="edu-highlights">
+                <span class="edu-pill">Object-Oriented Programming (C++, Python)</span>
+                <span class="edu-pill">Data Structures &amp; Algorithms</span>
+                <span class="edu-pill">Machine Learning Foundations</span>
+                <span class="edu-pill">Web Technologies &amp; Systems</span>
+                <span class="edu-pill">Applied Mathematics &amp; Statistics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Class 12th - Prerna International School -->
+          <div class="education-card">
+            <div class="edu-top">
+              <div class="edu-institution-info">
+                <div class="edu-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <div>
+                  <h3 class="edu-degree">Higher Secondary Schooling (Class XII)</h3>
+                  <p class="edu-institution">Prerna International School</p>
+                </div>
+              </div>
+              <div class="edu-timeline-badge">
+                <span>Completed: 2024</span>
+              </div>
+            </div>
+
+            <div class="edu-details">
+              <p>
+                Completed higher secondary education in 2024 with a focus on analytical thinking, scientific rigor, and mathematical reasoning.
+              </p>
+              <div class="edu-highlights">
+                <span class="edu-pill">Science &amp; Mathematics Stream</span>
+                <span class="edu-pill">Physics &amp; Chemistry</span>
+                <span class="edu-pill">Advanced Mathematics</span>
+                <span class="edu-pill">Problem Solving &amp; Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Class 10th - The Swaminarayan School -->
+          <div class="education-card">
+            <div class="edu-top">
+              <div class="edu-institution-info">
+                <div class="edu-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <h3 class="edu-degree">Secondary Schooling (Class X)</h3>
+                  <p class="edu-institution">The Swaminarayan School</p>
+                </div>
+              </div>
+              <div class="edu-timeline-badge">
+                <span>Completed: 2022</span>
+              </div>
+            </div>
+
+            <div class="edu-details">
+              <p>
+                Completed secondary schooling till 2022, building core foundations across mathematics, physical sciences, and introductory computing.
+              </p>
+              <div class="edu-highlights">
+                <span class="edu-pill">Foundational Sciences</span>
+                <span class="edu-pill">Mathematics</span>
+                <span class="edu-pill">Computer Fundamentals</span>
+                <span class="edu-pill">Academic Excellence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT SECTION
+         ========================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">10 &bull; Communication</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Open for internship opportunities, research collaborations, hackathon teams, and technical discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-type">Direct Email</span>
+              <a href="mailto:soumyamehar154@gmail.com" class="contact-val">soumyamehar154@gmail.com</a>
+              <p class="contact-hint">Fastest way to reach me for professional inquiries.</p>
+            </div>
+            <a href="mailto:soumyamehar154@gmail.com" class="contact-action-btn" aria-label="Compose email to Soumya Mehar">
+              <span>Send Email</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-type">LinkedIn Network</span>
+              <span class="contact-val">Soumya Mehar</span>
+              <p class="contact-hint">Connect with me on LinkedIn for updates and networking.</p>
+            </div>
+            <a href="https://www.linkedin.com/in/soumya-mehar-458115320/" target="_blank" rel="noopener noreferrer" class="contact-action-btn" aria-label="Visit LinkedIn Profile">
+              <span>View Profile</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-type">GitHub Profile</span>
+              <span class="contact-val">soumyamehar29</span>
+              <p class="contact-hint">Explore my open code repositories and project builds.</p>
+            </div>
+            <a href="https://github.com/soumyamehar29" target="_blank" rel="noopener noreferrer" class="contact-action-btn" aria-label="Visit GitHub Profile">
+              <span>View GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Mobile Phone Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-body">
+              <span class="contact-type">Mobile Number</span>
+              <a href="tel:+919588446174" class="contact-val" id="phone-display">+91 9588446174</a>
+              <p class="contact-hint">Available for calls and direct conversations.</p>
+            </div>
+            <a href="tel:+919588446174" class="contact-action-btn phone-link-btn" id="phone-link" aria-label="Call Soumya Mehar">
+              <span>Call / Text</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">Soumya Mehar</div>
+          <p class="footer-tagline">
+            Building practical software, exploring intelligent systems, and learning through research.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Soumya Mehar. Built with HTML, CSS &amp; Vanilla JavaScript.
+        </p>
+
+        <!-- Back to Top Control -->
+        <a href="#top" class="back-to-top" id="back-to-top" aria-label="Return to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

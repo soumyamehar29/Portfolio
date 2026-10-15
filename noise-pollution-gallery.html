@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noise Pollution Monitoring System — Project Screenshots | Soumya Mehar</title>
+  <meta name="description" content="Technical screenshots, acoustic classification UI, and sound analysis dashboard for the Noise Pollution Monitoring System project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+    }
+
+    .gallery-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(18, 14, 11, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1rem 0;
+    }
+
+    .gallery-nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    .back-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--border-hover);
+      transform: translateX(-2px);
+    }
+
+    .gallery-hero {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      background: radial-gradient(circle at top right, rgba(212, 175, 122, 0.12), transparent 60%);
+    }
+
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.35rem 0.85rem;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      color: var(--text-secondary);
+    }
+
+    .stat-pill strong {
+      color: var(--text-primary);
+    }
+
+    .gallery-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .gallery-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition-normal), transform var(--transition-normal);
+    }
+
+    .gallery-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .gallery-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      overflow: hidden;
+      background-color: #120e0b;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .gallery-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: var(--radius-sm);
+      transition: transform var(--transition-normal);
+      display: block;
+    }
+
+    .gallery-card:hover .gallery-img-wrap img {
+      transform: scale(1.02);
+    }
+
+    .gallery-overlay-btn {
+      position: absolute;
+      inset: 0;
+      background: rgba(18, 14, 11, 0.7);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+      color: var(--text-primary);
+      font-size: 0.9rem;
+      font-weight: 600;
+      gap: 0.5rem;
+    }
+
+    .gallery-img-wrap:hover .gallery-overlay-btn {
+      opacity: 1;
+    }
+
+    .gallery-card-content {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .gallery-tag-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .gallery-type-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      background-color: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      color: var(--accent-silver);
+    }
+
+    .gallery-item-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .gallery-item-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    /* Lightbox */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(14, 10, 8, 0.95);
+      backdrop-filter: blur(10px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .lightbox-content-box {
+      position: relative;
+      max-width: 900px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 75vh;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-medium);
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--text-primary);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .lightbox-subcaption {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      margin-top: 0.25rem;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -3rem;
+      right: 0;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+<body class="gallery-page">
+
+  <!-- Navigation -->
+  <header class="gallery-nav">
+    <div class="container gallery-nav-inner">
+      <div class="header-logo">
+        <a href="index.html" class="logo-link">
+          <span class="logo-badge">SM</span>
+          <span class="logo-text">Soumya Mehar</span>
+        </a>
+      </div>
+      <div>
+        <a href="index.html#projects" class="back-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Return to Projects</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="gallery-hero">
+    <div class="container">
+      <span class="section-tag">03 &bull; Featured Project Gallery</span>
+      <h1 class="section-title" style="margin-top:0.5rem; margin-bottom: 0.75rem;">Noise Pollution Monitoring System</h1>
+      <p class="section-subtitle" style="margin-bottom:0; max-width:850px;">
+        Advanced Sound Analysis UI — Real-time decibel telemetry, multi-tier risk status classification, WHO health benchmarks, and dynamic protective recommendations.
+      </p>
+
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:1.5rem;">
+        <span class="stat-pill">Platform: <strong>ESP32 &bull; Mobile/Web Dashboard</strong></span>
+        <span class="stat-pill">Sensors: <strong>High-Precision Sound Sensor (dB)</strong></span>
+        <span class="stat-pill">Research: <strong>Selected for ICACEBD-25 Conference</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Main -->
+  <main class="container" style="flex-grow:1;">
+    <div class="gallery-cards-grid">
+
+      <!-- Image 1: High Risk Sound Analysis (82 dB) -->
+      <article class="gallery-card">
+        <div class="gallery-img-wrap" onclick="openLightbox('assets/project-images/noise-monitoring-high-risk.png', 'High Risk Sound Analysis (82 dB)', 'Triggered hazard state indicating Dangerous exposure, WHO exceedance, and immediate hearing protection guidance.')">
+          <img src="assets/project-images/noise-monitoring-high-risk.png" alt="Advanced Sound Analysis - Dangerous High Risk 82 dB Reading">
+          <div class="gallery-overlay-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <span>Click to Enlarge</span>
+          </div>
+        </div>
+        <div class="gallery-card-content">
+          <div class="gallery-tag-row">
+            <span class="gallery-type-tag" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);">High Hazard State</span>
+            <span style="font-size:0.8rem; color:var(--text-muted);">82 dB Trigger</span>
+          </div>
+          <h2 class="gallery-item-title">Hazard State &amp; Health Risk Telemetry</h2>
+          <p class="gallery-item-desc">
+            Visualizes dangerous exposure conditions (82 dB) with chromatic intensity gauges, WHO benchmark comparison, cardiovascular/hearing impact alerts, and immediate protective recommendations.
+          </p>
+          <div style="display:flex; justify-content:flex-end; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+            <a href="assets/project-images/noise-monitoring-high-risk.png" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <span>Open Raw Image</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Image 2: Safe Sound Reading (30 dB) -->
+      <article class="gallery-card">
+        <div class="gallery-img-wrap" onclick="openLightbox('assets/project-images/noise-monitoring-safe-reading.png', 'Optimal Environment Reading (30 dB)', 'Safe quiet library baseline with zero health risk and ideal concentration conditions.')">
+          <img src="assets/project-images/noise-monitoring-safe-reading.png" alt="Advanced Sound Analysis - Safe 30 dB Reading">
+          <div class="gallery-overlay-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <span>Click to Enlarge</span>
+          </div>
+        </div>
+        <div class="gallery-card-content">
+          <div class="gallery-tag-row">
+            <span class="gallery-type-tag" style="color: #22c55e; border-color: rgba(34, 197, 94, 0.3);">Safe Baseline</span>
+            <span style="font-size:0.8rem; color:var(--text-muted);">30 dB Reading</span>
+          </div>
+          <h2 class="gallery-item-title">Safe Ambient Baseline Telemetry</h2>
+          <p class="gallery-item-desc">
+            Demonstrates compliant ambient sound levels (30 dB) typical of quiet library environments, confirming no health risk, zero cognitive stress, and optimal conditions for work and study.
+          </p>
+          <div style="display:flex; justify-content:flex-end; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+            <a href="assets/project-images/noise-monitoring-safe-reading.png" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <span>Open Raw Image</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+    <div class="lightbox-content-box" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged screenshot">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+      <div id="lightbox-subcaption" class="lightbox-subcaption"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copyright">&copy; 2026 Soumya Mehar &bull; Noise Pollution Monitoring System</p>
+      <a href="index.html#projects" class="back-to-top">Return to Portfolio &uarr;</a>
+    </div>
+  </footer>
+
+  <script>
+    function openLightbox(src, caption, subcaption) {
+      const modal = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      const sub = document.getElementById('lightbox-subcaption');
+      
+      img.src = src;
+      cap.textContent = caption || '';
+      sub.textContent = subcaption || '';
+      
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e) e.stopPropagation();
+      const modal = document.getElementById('lightbox');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
